@@ -1,7 +1,6 @@
 # IndicadoresApp
 
-This project was generated with Angular CLI version 13.3.0.
-
+Proyecto generado con Angular CLI versión 13.3.0 y Node en su versión 14.16.1
 
 ### Instalar módulos de Node
 
