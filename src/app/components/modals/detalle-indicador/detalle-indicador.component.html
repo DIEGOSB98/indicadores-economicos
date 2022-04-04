@@ -1,0 +1,20 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{indicador.nombre}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="referenciaModal.close()"></button>
+</div>
+<div class="modal-body">
+  <div class="d-flex row contenedor-detalle">
+    <div class="text-center">
+      <span class="h3 link-primary font-weight cursor-pointer">{{indicador.valor | currency: 'CLP'}}</span>
+    </div>
+    <div class="h6">
+      Nombre: {{indicador.nombre}}
+    </div>
+    <div class="h6">
+      Fecha: {{indicador.fecha | date: 'dd-MM-YYYY'}}
+    </div>
+    <div class="h6">
+      Unidad de medida: {{indicador.unidad_medida}}
+    </div>
+  </div>
+</div>

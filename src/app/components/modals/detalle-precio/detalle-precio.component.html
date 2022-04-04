@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">{{indicador.nombre}}</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="referenciaModal.close()"></button>
+</div>
+<div class="modal-body">
+  <app-loading *ngIf="estadoCargando"></app-loading>
+  <ul *ngIf="!estadoCargando" class="list-group animate__animated animate__fadeIn">
+    <li *ngFor="let serie of series" class="list-group-item">
+      <div class="d-flex">
+        <div class="flex-fill">
+          <span class="link-primary font-weight cursor-pointer">
+            {{serie.fecha | date: 'dd-MM-YYYY'}}
+          </span>
+        </div>
+        <div class="flex-fill">{{serie.valor | currency: 'CLP'}}</div>
+      </div>
+    </li>
+  </ul>
+</div>
